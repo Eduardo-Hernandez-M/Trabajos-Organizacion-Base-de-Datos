@@ -1,0 +1,10 @@
+digraph DiagramDeFlujo {
+    inicio [shape=ellipse, label="Inicio"]
+    print [shape=ellipse, label="¿Imprimir Hola Mundo?"]
+    camino_verdadero [shape=rectangle, label="Hola Mundo"]
+    fin [shape=elipse, label="Fin"]
+
+    inicio -> print
+    print -> camino_verdadero [label="Si"]
+    camino_verdadero -> fin
+}

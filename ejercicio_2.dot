@@ -1,0 +1,15 @@
+digraph DiagramDeFlujo {
+    inicio [shape=ellipse, label="Inicio",color="red"]
+    ingresar_numero [shape=box, label="Ingresa un número",color="purple"]
+    i [shape=diamond, label="(num%2)==0",color="orange"]
+    no_es_par [shape=box, label="No es par", color="silver"]
+    es_par [shape=box, label="Es par",color="gold"]
+    fin [shape=elipse, label="Fin",color="green"]
+
+    inicio -> ingresar_numero
+    ingresar_numero -> i
+    i -> es_par [label="SI"]
+    i -> no_es_par [label="No"]
+    no_es_par -> fin
+    es_par -> fin
+}

@@ -1,0 +1,22 @@
+digraph Arbol {
+    A [shape=ellipse, label="2"]
+    B [shape=ellipse, label="7"]
+    C [shape=ellipse, label="23"]
+    D [shape=ellipse, label="38"]
+    E [shape=ellipse, label="45"]
+    F [shape=ellipse, label="48"]
+    G [shape=ellipse, label="52"]
+    H [shape=ellipse, label="65"]
+    I [shape=ellipse, label="96"]
+
+    A -> B
+    A -> C
+    B -> D
+    C -> E
+    B -> F
+    C -> G
+    F -> H
+    G -> I
+}
+
+#Instalar la libreria de reconocimiento de voz, para ppoder escribir el texto hablado"

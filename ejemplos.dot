@@ -1,0 +1,13 @@
+digraph DiagramDeFlujo {
+    inicio [shape=ellipse, label="Inicio"]
+    decision [shape=diamond, label="¿x>10?"]
+    camino_verdadero [shape=rectangle, label="Camino Verdadero"]
+    camino_falso [shape=rectangle, label="Camino Falso"]
+    fin [shape=elipse, label="Fin"]
+
+    inicio -> decision
+    decision -> camino_verdadero [label="Si"]
+    decision -> camino_falso [label="No"]
+    camino_verdadero -> fin
+    camino_falso -> fin
+}
